@@ -5,10 +5,6 @@ import { Component, Host, h } from '@stencil/core';
 })
 export class AppRoot {
   render() {
-    return (
-      <Host>
-          Hello World
-      </Host>
-    );
+    return <Host>Hello World</Host>;
   }
 }
