@@ -25,8 +25,8 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil/core": ["../workspaces/stencil/internal"],
-      "@stencil/core/internal": ["../workspaces/stencil/internal"],
+      "@stencil/core": ["../../../Users/ryan/workspaces/stencil/internal"],
+      "@stencil/core/internal": ["../../../Users/ryan/workspaces/stencil/internal"],
 //      "@stencil/core": ["@stencil/core"],
 //      "@stencil/core/internal": ["@stencil/core"]
     }
