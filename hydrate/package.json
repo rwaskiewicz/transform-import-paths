@@ -1,0 +1,6 @@
+{
+  "name": "create-elm/hydrate",
+  "description": "TestPrerender component hydration app.",
+  "main": "index.js",
+  "types": "index.d.ts"
+}

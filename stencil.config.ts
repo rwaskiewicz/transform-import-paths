@@ -7,6 +7,9 @@ export const config: Config = {
   maxConcurrentWorkers: 0,
   outputTargets: [
     {
+      type: 'dist-hydrate-script',
+    },
+    {
       type: 'www',
 //      dir:
       baseUrl: 'https://karma.stenciljs.com/prerender',
