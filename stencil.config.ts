@@ -9,6 +9,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
       prerenderConfig: 'prerender.config.js',
       baseUrl: 'https://karma.stenciljs.com/prerender',
+      empty: false,
     },
   ],
   testing: {
