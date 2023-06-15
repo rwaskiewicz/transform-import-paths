@@ -6,56 +6,164 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface AppRoot {
+    }
+    interface CmpA {
+    }
+    interface CmpB {
+    }
+    interface CmpC {
+    }
+    interface CmpClientScoped {
+    }
+    interface CmpClientShadow {
+    }
+    interface CmpD {
+        "uniqueId": string;
+    }
+    interface CmpScopedA {
+    }
+    interface CmpScopedB {
+    }
+    interface CmpTextBlue {
+    }
+    interface CmpTextGreen {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLAppRootElement: {
+        prototype: HTMLAppRootElement;
+        new (): HTMLAppRootElement;
+    };
+    interface HTMLCmpAElement extends Components.CmpA, HTMLStencilElement {
+    }
+    var HTMLCmpAElement: {
+        prototype: HTMLCmpAElement;
+        new (): HTMLCmpAElement;
+    };
+    interface HTMLCmpBElement extends Components.CmpB, HTMLStencilElement {
+    }
+    var HTMLCmpBElement: {
+        prototype: HTMLCmpBElement;
+        new (): HTMLCmpBElement;
+    };
+    interface HTMLCmpCElement extends Components.CmpC, HTMLStencilElement {
+    }
+    var HTMLCmpCElement: {
+        prototype: HTMLCmpCElement;
+        new (): HTMLCmpCElement;
+    };
+    interface HTMLCmpClientScopedElement extends Components.CmpClientScoped, HTMLStencilElement {
+    }
+    var HTMLCmpClientScopedElement: {
+        prototype: HTMLCmpClientScopedElement;
+        new (): HTMLCmpClientScopedElement;
+    };
+    interface HTMLCmpClientShadowElement extends Components.CmpClientShadow, HTMLStencilElement {
+    }
+    var HTMLCmpClientShadowElement: {
+        prototype: HTMLCmpClientShadowElement;
+        new (): HTMLCmpClientShadowElement;
+    };
+    interface HTMLCmpDElement extends Components.CmpD, HTMLStencilElement {
+    }
+    var HTMLCmpDElement: {
+        prototype: HTMLCmpDElement;
+        new (): HTMLCmpDElement;
+    };
+    interface HTMLCmpScopedAElement extends Components.CmpScopedA, HTMLStencilElement {
+    }
+    var HTMLCmpScopedAElement: {
+        prototype: HTMLCmpScopedAElement;
+        new (): HTMLCmpScopedAElement;
+    };
+    interface HTMLCmpScopedBElement extends Components.CmpScopedB, HTMLStencilElement {
+    }
+    var HTMLCmpScopedBElement: {
+        prototype: HTMLCmpScopedBElement;
+        new (): HTMLCmpScopedBElement;
+    };
+    interface HTMLCmpTextBlueElement extends Components.CmpTextBlue, HTMLStencilElement {
+    }
+    var HTMLCmpTextBlueElement: {
+        prototype: HTMLCmpTextBlueElement;
+        new (): HTMLCmpTextBlueElement;
+    };
+    interface HTMLCmpTextGreenElement extends Components.CmpTextGreen, HTMLStencilElement {
+    }
+    var HTMLCmpTextGreenElement: {
+        prototype: HTMLCmpTextGreenElement;
+        new (): HTMLCmpTextGreenElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "app-root": HTMLAppRootElement;
+        "cmp-a": HTMLCmpAElement;
+        "cmp-b": HTMLCmpBElement;
+        "cmp-c": HTMLCmpCElement;
+        "cmp-client-scoped": HTMLCmpClientScopedElement;
+        "cmp-client-shadow": HTMLCmpClientShadowElement;
+        "cmp-d": HTMLCmpDElement;
+        "cmp-scoped-a": HTMLCmpScopedAElement;
+        "cmp-scoped-b": HTMLCmpScopedBElement;
+        "cmp-text-blue": HTMLCmpTextBlueElement;
+        "cmp-text-green": HTMLCmpTextGreenElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface AppRoot {
+    }
+    interface CmpA {
+    }
+    interface CmpB {
+    }
+    interface CmpC {
+    }
+    interface CmpClientScoped {
+    }
+    interface CmpClientShadow {
+    }
+    interface CmpD {
+        "uniqueId"?: string;
+    }
+    interface CmpScopedA {
+    }
+    interface CmpScopedB {
+    }
+    interface CmpTextBlue {
+    }
+    interface CmpTextGreen {
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "app-root": AppRoot;
+        "cmp-a": CmpA;
+        "cmp-b": CmpB;
+        "cmp-c": CmpC;
+        "cmp-client-scoped": CmpClientScoped;
+        "cmp-client-shadow": CmpClientShadow;
+        "cmp-d": CmpD;
+        "cmp-scoped-a": CmpScopedA;
+        "cmp-scoped-b": CmpScopedB;
+        "cmp-text-blue": CmpTextBlue;
+        "cmp-text-green": CmpTextGreen;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "cmp-a": LocalJSX.CmpA & JSXBase.HTMLAttributes<HTMLCmpAElement>;
+            "cmp-b": LocalJSX.CmpB & JSXBase.HTMLAttributes<HTMLCmpBElement>;
+            "cmp-c": LocalJSX.CmpC & JSXBase.HTMLAttributes<HTMLCmpCElement>;
+            "cmp-client-scoped": LocalJSX.CmpClientScoped & JSXBase.HTMLAttributes<HTMLCmpClientScopedElement>;
+            "cmp-client-shadow": LocalJSX.CmpClientShadow & JSXBase.HTMLAttributes<HTMLCmpClientShadowElement>;
+            "cmp-d": LocalJSX.CmpD & JSXBase.HTMLAttributes<HTMLCmpDElement>;
+            "cmp-scoped-a": LocalJSX.CmpScopedA & JSXBase.HTMLAttributes<HTMLCmpScopedAElement>;
+            "cmp-scoped-b": LocalJSX.CmpScopedB & JSXBase.HTMLAttributes<HTMLCmpScopedBElement>;
+            "cmp-text-blue": LocalJSX.CmpTextBlue & JSXBase.HTMLAttributes<HTMLCmpTextBlueElement>;
+            "cmp-text-green": LocalJSX.CmpTextGreen & JSXBase.HTMLAttributes<HTMLCmpTextGreenElement>;
         }
     }
 }
