@@ -1,18 +1,18 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'create-elm',
+  namespace: 'TestPrerender',
+  tsconfig: 'tsconfig.json',
   transformAliasedImportPaths: true,
+  maxConcurrentWorkers: 0,
   outputTargets: [
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
-      prerenderConfig: 'prerender.config.js',
+//      dir:
       baseUrl: 'https://karma.stenciljs.com/prerender',
+      serviceWorker: null, // disable service workers
       empty: false,
+      prerenderConfig: 'prerender.config.js',
     },
   ],
-  testing: {
-    browserHeadless: "new",
-  },
 };

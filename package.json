@@ -19,16 +19,14 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build --prerender --debug",
+    "build": "stencil build --config stencil.config.ts --prerender --debug",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
   },
-  "dependencies": {
-    "@stencil/core": "^3.0.0"
-  },
   "devDependencies": {
+    "@stencil/core": "^3.4.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
     "jest": "^27.5.1",
