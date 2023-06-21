@@ -1,5 +1,6 @@
 import { Component, Host, h } from '@stencil/core';
-
+// @ts-ignore
+//import {mock} from 'jest';
 @Component({
   tag: 'app-root',
 })

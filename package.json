@@ -20,8 +20,10 @@
   ],
   "scripts": {
     "build": "~/workspaces/stencil/bin/stencil build --config stencil.config.ts --prerender --debug",
+    "build-local": "stencil build --config stencil.config.ts --prerender --debug",
     "prerender": "~/workspaces/stencil/bin/stencil prerender --config stencil.config.ts  /Users/ryan/workspaces/sandbox/stencil-issues/transform-import-paths/dist/hydrate/index.js",
     "start": "~/workspaces/stencil/bin/stencil build --dev --watch --serve",
+    "start-local": "stencil build --dev --watch --serve",
     "test": "~/workspaces/stencil/bin/stencil test --spec --e2e",
     "test.watch": "~/workspaces/stencil/bin/stencil test --spec --e2e --watchAll",
     "generate": "~/workspaces/stencil/bin/stencil generate"
@@ -35,7 +37,10 @@
   },
   "license": "MIT",
   "volta": {
-    "node": "14.21.1",
-    "npm": "6.14.18"
+    "node": "20.3.1",
+    "npm": "9.7.1"
+  },
+  "dependencies": {
+    "@stencil/core": "^3.4.0"
   }
 }
