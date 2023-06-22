@@ -21,7 +21,7 @@
   "scripts": {
     "build": "~/workspaces/stencil/bin/stencil build --config stencil.config.ts --prerender --debug",
     "build-local": "stencil build --config stencil.config.ts --prerender --debug",
-    "prerender": "~/workspaces/stencil/bin/stencil prerender --config stencil.config.ts  ./hydrate/index.js",
+    "prerender": "~/workspaces/stencil/bin/stencil prerender --config stencil.config.ts  /Users/ryan/workspaces/sandbox/stencil-issues/transform-import-paths/dist/hydrate/index.js",
     "start": "~/workspaces/stencil/bin/stencil build --dev --watch --serve",
     "start-local": "stencil build --dev --watch --serve",
     "test": "~/workspaces/stencil/bin/stencil test --spec --e2e",
