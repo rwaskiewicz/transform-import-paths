@@ -25,11 +25,11 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil/core": ["../../../stencil/internal"],
-      "@stencil/core/internal": ["../../../stencil/internal"],
+//      "@stencil/core": ["../../../stencil/internal"],
+//      "@stencil/core/internal": ["../../../stencil/internal"],
 //      "jest": ["./node_modules/jest"]
-//      "@stencil/core": ["@stencil/core"],
-//      "@stencil/core/internal": ["@stencil/core"]
+      "@stencil/core": ["@stencil/core"],
+      "@stencil/core/internal": ["@stencil/core"]
     }
   },
   "include": [
